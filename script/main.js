@@ -47,4 +47,7 @@
     img.addEventListener('click', changeElements, false);
   });
 
+  //document.querySelector('#spring').click();
+  changeElements.call(document.querySelector('#spring'));
+
 })();
