@@ -27,6 +27,12 @@
 
       //change src propertie
       newSubImg.src = 'images/' + objectIndex.images[index];
+
+      newSubImg.dataset.index = index;
+
+      //add an event handler to trigger a lightbox
+      newSubImg.addEventListener('click', popLightbox, false);
+
       subImages.appendChild(newSubImg);
     });
 
@@ -46,6 +52,12 @@
     //add an event handler to each image
     img.addEventListener('click', changeElements, false);
   });
+
+  function popLightbox() {
+    debugger;
+    let lightbox = document.querySelector('.lightbox');
+    lightbox.style.display = 'block';
+  }
 
   //document.querySelector('#spring').click();
   changeElements.call(document.querySelector('#spring'));
