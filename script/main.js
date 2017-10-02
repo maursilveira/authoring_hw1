@@ -31,7 +31,8 @@
       newSubImg.dataset.index = index;
 
       //add an event handler to trigger a lightbox
-      newSubImg.addEventListener('click', popLightbox, false);
+      //using a function to call another one to pass arguments
+      newSubImg.addEventListener('click', function() {popLightbox(index, objectIndex);}, false);
 
       subImages.appendChild(newSubImg);
     });
@@ -53,10 +54,26 @@
     img.addEventListener('click', changeElements, false);
   });
 
-  function popLightbox() {
-    debugger;
+  function popLightbox(currentIndex, currentObject) {
+    // debugger;
+    //move window to the top every time we click - quick bug fix
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'hidden';
+
     let lightbox = document.querySelector('.lightbox');
+    let lightboxImg = lightbox.querySelector('img');
+    let lightboxDesc = lightbox.querySelector('p');
+    let lightboxClose = lightbox.querySelector('.close-lightbox');
+
     lightbox.style.display = 'block';
+    lightboxImg.src = 'images/' + currentObject.images[currentIndex];
+    lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+
+    lightboxClose.addEventListener('click', closeLightbox, false);
+  }
+
+  function closeLightbox() {
+    debugger;
   }
 
   //document.querySelector('#spring').click();
