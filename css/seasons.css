@@ -41,8 +41,8 @@ section { margin-top: 15px; background-color: #FFF; }
 	text-align: left;
 	padding-left: 20px;
 	padding-top: 20px;
-	margin: 0; b
-	order:0px;
+	margin: 0;
+	border: 0px;
 }
 
 .main-copy p {
@@ -58,14 +58,19 @@ section { margin-top: 15px; background-color: #FFF; }
 .thumb { height: 90px; margin: 8px; cursor: pointer; }
 
 .lightbox {
+	width: 600px;
 	position: absolute;
 	display: none;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.85);
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
 
 .close-lightbox {
@@ -74,8 +79,19 @@ section { margin-top: 15px; background-color: #FFF; }
 	margin-top: 12px;
 	font-size: 2em;
 	cursor: pointer;
+
 }
 
 .lightbox-img {
 	display: block;
+	max-width: 500px;
+	margin-right: 0;
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+.img-desc {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	text-align: center;
 }

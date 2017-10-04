@@ -55,7 +55,6 @@
   });
 
   function popLightbox(currentIndex, currentObject) {
-    // debugger;
     //move window to the top every time we click - quick bug fix
     window.scrollTo(0, 0);
     document.body.style.overflow = 'hidden';
@@ -65,6 +64,7 @@
     let lightboxDesc = lightbox.querySelector('p');
     let lightboxClose = lightbox.querySelector('.close-lightbox');
 
+
     lightbox.style.display = 'block';
     lightboxImg.src = 'images/' + currentObject.images[currentIndex];
     lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
@@ -73,10 +73,17 @@
   }
 
   function closeLightbox() {
-    debugger;
+    let lightbox = document.querySelector('.lightbox');
+    let lightboxImg = lightbox.querySelector('img');
+    let lightboxDesc = lightbox.querySelector('p');
+    let lightboxClose = lightbox.querySelector('.close-lightbox');
+
+    lightbox.style.display = null;
+    document.body.style.overflow = null;
+    lightboxImg.src = "#";
+    lightboxDesc.innerHTML = null;
   }
 
-  //document.querySelector('#spring').click();
   changeElements.call(document.querySelector('#spring'));
 
 })();

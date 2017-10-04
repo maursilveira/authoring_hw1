@@ -6,12 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
 			],
 
 			imageDescription : [
 				"This is a bunch of butterflies",
-				"This is a happy duck :)"
+				"This is a happy duck :)",
+				"Bubbles and lavender: just beautiful!",
+				"This little lamb will probably eat all those flowers",
+				"What an amazing garden by the lake",
+				"Look this branch! Checkout it! :P"
 			]
 		},
 
@@ -22,7 +30,20 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+
+			imageDescription : [
+				"Colorful chairs by shoreline",
+				"I am so sleepy today",
+				"\"Hold my flip flops...\"",
+				"It is drinking time",
+				"Check my phone background!",
+				"Ice cream and my diet: a paradox"
 			]
 		},
 
@@ -33,7 +54,20 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+
+			imageDescription : [
+				"Trees and red leaves",
+				"Pumpkins and sunflowers: nice Halloween decoration!",
+				"Lemurs playing on the leaves",
+				"A cute fox",
+				"I would like to view from this window",
+				"Red leaves are always adorable"
 			]
 		},
 
@@ -44,7 +78,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+
+			imageDescription : [
+				"Snow in a forest: a classic",
+				"A happy snowman",
+				"A wild horse running",
+				"\"Oh no, I forgot the snow brush!\"",
+				"As beautiful as the snow",
+				"Ok, one more snowman (just because it is Winter time)"
 			]
 		}
 	};
